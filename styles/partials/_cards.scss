@@ -1,0 +1,170 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    #catalogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            justify-content: space-evenly;
+
+            padding: 3rem;
+
+
+            #tarjeta-auto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+
+                width: 20rem;
+                border: solid rgb(158, 128, 152) 0.5px;
+
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.02);
+                    transform: translateY(-5px);
+                    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+                    ;
+                }
+
+                & img {
+                    width: 18rem;
+                }
+
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1rem;
+                    line-height: 1.5rem;
+
+
+
+                    .btn-comprar {
+                        color: white;
+                        background-color: #68c4a1;
+                        padding: 0.5rem;
+                        border-radius: 5px;
+
+                        &:hover {
+                            color: rgb(124, 174, 124);
+                            transition: 0.5s;
+                            background-color: brown;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+    #tarjeta-auto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+
+        width: 20rem;
+        border: solid rgb(158, 128, 152) 0.5px;
+
+        &:hover {
+            transition: 0.5s;
+            transform: scale(1.02);
+            transform: translateY(-5px);
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+            ;
+        }
+
+        & img {border-radius: 3px;
+            width: 18rem;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            line-height: 1.5rem;
+
+
+
+            .btn-comprar {
+                color: white;
+                background-color: #68c4a1;
+                padding: 0.5rem;
+                border-radius: 5px;
+
+                &:hover {
+                    color: rgb(124, 174, 124);
+                    transition: 0.5s;
+                    background-color: brown;
+                }
+            }
+
+        }
+
+    }
+}
+
+#lista-carrito{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: space-evenly;
+
+    padding: 2rem;
+}
+
+.card{
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.02);
+        transform: translateY(-5px);
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+       background-color: rgba(228, 235, 100, 0.775) ;
+    }
+}
+
+.ultimo-mensaje{ font-weight: 500;
+    color: #3759a7;
+font-size: 2rem;}
+
+.ultima-compra-section{
+    display: flex;
+    flex-direction: column;
+
+    #ultima-compra-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        gap: 1rem;
+        justify-content: space-evenly;
+        padding: 2rem;
+
+        .ultima-compra-card{
+            padding: 1rem;
+            border: solid rgb(197, 229, 137) 2px;
+
+            img{border-radius: 5px;}
+
+            span{padding-inline: 0.5rem;
+                border-radius: 3px;
+                background-color: rgba(229, 113, 113, 0.658);
+                  color: rgb(16, 16, 102);}
+        }
+    }
+}

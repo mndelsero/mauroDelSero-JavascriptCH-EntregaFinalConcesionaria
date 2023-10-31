@@ -1,0 +1,90 @@
+[{
+    "id": 1,
+    "marca": "Mercedes-Benz",
+    "modelo": "CLA 200",
+    "precio": 90000,
+    "trasmision": "automatico",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/2023-AMG-C-COUPE-MP-041.webp"
+},
+{
+    "id": 6,
+    "marca": "Mercedes-Benz",
+    "modelo": "AMG GT63",
+    "precio": 150000,
+    "trasmision": "automatico",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/1.webp"
+},
+{
+    "id": 2,
+    "marca": "Volkswagen",
+    "modelo": "Polo",
+    "precio": 55000,
+    "trasmision": "manual",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/images (2).jpeg"
+},
+{
+    "id": 7,
+    "marca": "Volkswagen",
+    "modelo": "GTI",
+    "precio": 77000,
+    "trasmision": "automatico",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/images (3).jpeg"
+},
+{
+    "id": 4,
+    "marca": "BMW",
+    "modelo": "M3 CL",
+    "precio": 85000,
+    "trasmision": "automatico",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/descarga (3).jpeg"
+},
+{
+    "id": 3,
+    "marca": "Porsche",
+    "modelo": "911Sport",
+    "precio": 100000,
+    "trasmision": "semi-automatico",
+    "cantidad": 1,
+    "stock": 2,
+    "imagen": "./imgs/Porsche 911 Carrera T-8.webp"
+},
+{
+    "id": 8,
+    "marca": "Porsche",
+    "modelo": "Carrera SLS",
+    "precio": 170000,
+    "trasmision": "manual",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/collecting-cars-carrera-gt-web-153-1625508489.jpg"
+},
+{
+    "id": 5,
+    "marca": "Audi",
+    "modelo": "QuatroMax",
+    "precio": 60000,
+    "trasmision": "manual",
+    "cantidad": 1,
+    "stock": 1,
+    "imagen": "./imgs/o_88601a-scaled-1.jpg"
+},
+{
+    "id": 9,
+    "marca": "Audi",
+    "modelo": "A4 GTS",
+    "precio": 90000,
+    "trasmision": "automatico",
+    "cantidad": 1,
+    "stock": 2,
+    "imagen": "./imgs/el-nuevo-audi-a4-ya-tiene-fecha-de-llegada-a-la-argentina-965386.jpg"
+}]

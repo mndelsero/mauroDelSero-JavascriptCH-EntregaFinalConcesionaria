@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "National First Font", sans-serif;
+  font-size: 2;
+}
+
+h1 {
+  padding-top: 1.5rem;
+  font-size: 4rem;
+  font-family: "Comming", sans-serif;
+}
+
+img {
+  width: 200px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "National First Font", sans-serif;
+}
+
+h2 {
+  color: rgb(199, 78, 78);
+  padding-top: 1.5rem;
+  font-size: 5rem;
+  font-family: "Comming", sans-serif;
+}
+
+button {
+  color: white;
+  background-color: #68c4a1;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+button:hover {
+  color: rgb(124, 174, 124);
+  transition: 0.5s;
+  background-color: brown;
+}
+
+h5 {
+  font-weight: 500;
+  color: #3759a7;
+}
+
+h3 {
+  font-weight: 500;
+  color: #3759a7;
+}
+
+#carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carrito p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(109, 134, 210);
+}
+#carrito p span {
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: rgb(199, 78, 78);
+  color: rgb(158, 209, 203);
+}
+
+#modelo-comprado {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+}
+header .menu {
+  width: 100%;
+}
+header .menu nav .navbar {
+  display: flex;
+  justify-content: space-around;
+}
+header .menu nav .navbar li a {
+  color: rgb(199, 78, 78);
+  padding: 1rem;
+  border-radius: 5px;
+  border: solid red 4px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main #catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main #catalogo .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+.main #catalogo .cards #tarjeta-auto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 20rem;
+  border: solid rgb(158, 128, 152) 0.5px;
+}
+.main #catalogo .cards #tarjeta-auto:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.main #catalogo .cards #tarjeta-auto img {
+  width: 18rem;
+}
+.main #catalogo .cards #tarjeta-auto .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.main #catalogo .cards #tarjeta-auto .card-body .btn-comprar {
+  color: white;
+  background-color: #68c4a1;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.main #catalogo .cards #tarjeta-auto .card-body .btn-comprar:hover {
+  color: rgb(124, 174, 124);
+  transition: 0.5s;
+  background-color: brown;
+}
+.main #tarjeta-auto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 20rem;
+  border: solid rgb(158, 128, 152) 0.5px;
+}
+.main #tarjeta-auto:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.main #tarjeta-auto img {
+  border-radius: 3px;
+  width: 18rem;
+}
+.main #tarjeta-auto .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+.main #tarjeta-auto .card-body .btn-comprar {
+  color: white;
+  background-color: #68c4a1;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.main #tarjeta-auto .card-body .btn-comprar:hover {
+  color: rgb(124, 174, 124);
+  transition: 0.5s;
+  background-color: brown;
+}
+
+#lista-carrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.card:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  background-color: rgba(228, 235, 100, 0.775);
+}
+
+.ultimo-mensaje {
+  font-weight: 500;
+  color: #3759a7;
+  font-size: 2rem;
+}
+
+.ultima-compra-section {
+  display: flex;
+  flex-direction: column;
+}
+.ultima-compra-section #ultima-compra-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+.ultima-compra-section #ultima-compra-list .ultima-compra-card {
+  padding: 1rem;
+  border: solid rgb(197, 229, 137) 2px;
+}
+.ultima-compra-section #ultima-compra-list .ultima-compra-card img {
+  border-radius: 5px;
+}
+.ultima-compra-section #ultima-compra-list .ultima-compra-card span {
+  padding-inline: 0.5rem;
+  border-radius: 3px;
+  background-color: rgba(229, 113, 113, 0.658);
+  color: rgb(16, 16, 102);
+}/*# sourceMappingURL=estilo.css.map */
