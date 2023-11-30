@@ -3,6 +3,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0);
+
+    .intro-sctn {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: min-content;
+        border-bottom: solid $mainColor 1px;
+        padding-bottom: 1rem;
+
+
+
+        .intro-img {
+            background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 2rem;
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            p {
+                font-size: 2.5rem;
+                padding: 1rem;
+                background-color: rgba(177, 29, 0, 0.205), ;
+                margin: 0;
+                color: $textColor;
+                border-radius: 0rem 0rem 2rem 2rem;
+
+            }
+
+
+
+        }
+
+
+    }
 
 
 
@@ -11,14 +51,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0rem;
+
 
 
         .cards {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 1rem;
-            justify-content: space-evenly;
-
+            justify-content: space-between;
+            border-bottom: solid $mainColor 1px;
             padding: 3rem;
 
 
@@ -26,10 +68,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: space-evenly;
                 padding: 1rem;
-
+                color: $menuColor ;
+                background-color: $textColor;
                 width: 20rem;
-                border: solid rgb(158, 128, 152) 0.5px;
+                border: solid $mainColor 0.5px;
+                border-radius: 0.5rem;
 
                 &:hover {
                     transition: 0.5s;
@@ -47,6 +92,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    justify-content: space-evenly;
                     padding: 1rem;
                     line-height: 1.5rem;
 
@@ -54,12 +100,12 @@
 
                     .btn-comprar {
                         color: white;
-                        background-color: #68c4a1;
+                        background-color: $linkHoverColor;
                         padding: 0.5rem;
                         border-radius: 5px;
 
                         &:hover {
-                            color: rgb(124, 174, 124);
+                            color: $linkHoverColor;
                             transition: 0.5s;
                             background-color: brown;
                         }
@@ -90,7 +136,8 @@
             ;
         }
 
-        & img {border-radius: 3px;
+        & img {
+            border-radius: 3px;
             width: 18rem;
         }
 
@@ -105,7 +152,7 @@
 
             .btn-comprar {
                 color: white;
-                background-color: #68c4a1;
+                background-color: $linkHoverColor;
                 padding: 0.5rem;
                 border-radius: 5px;
 
@@ -121,50 +168,106 @@
     }
 }
 
-#lista-carrito{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    justify-content: space-evenly;
+#carrito {
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: solid $mainColor 1px;
+    margin-top: 1rem;
 
-    padding: 2rem;
-}
+    #lista-carrito {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: space-evenly;
+         padding: 2rem;
 
-.card{
-    &:hover {
-        transition: 0.5s;
-        transform: scale(1.02);
-        transform: translateY(-5px);
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
-       background-color: rgba(228, 235, 100, 0.775) ;
+         .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card-body {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    font-size: 2rem;
+                    color: $menuColor;
+        
+        
+                }
+                p{
+                    font-size: 1rem;
+
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+        
+        
+            }
+        
+        
+        
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.02);
+                transform: translateY(-5px);
+                box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+                background-color: rgba(228, 235, 100, 0.775);
+            }
+        }
     }
+
+
 }
 
-.ultimo-mensaje{ font-weight: 500;
-    color: #3759a7;
-font-size: 2rem;}
 
-.ultima-compra-section{
+
+
+.ultimo-mensaje {
+    font-weight: 500;
+    color: $menuColor;
+    font-size: 2rem;
+}
+
+.ultima-compra-section {
     display: flex;
     flex-direction: column;
+    border-bottom: solid $mainColor 1px;
+    align-items: center;
 
-    #ultima-compra-list{
+    #ultima-compra-list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1rem;
         justify-content: space-evenly;
         padding: 2rem;
 
-        .ultima-compra-card{
+
+
+        .ultima-compra-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 1rem;
             border: solid rgb(197, 229, 137) 2px;
+            background-color: $textColor;
+            color: $menuColor;
 
-            img{border-radius: 5px;}
+            img {
+                border-radius: 5px;
+            }
 
-            span{padding-inline: 0.5rem;
+            span {
+                padding-inline: 0.5rem;
                 border-radius: 3px;
-                background-color: rgba(229, 113, 113, 0.658);
-                  color: rgb(16, 16, 102);}
+                background-color: $mainColor;
+                color: $menuColor
+            }
         }
     }
 }

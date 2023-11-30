@@ -4,13 +4,13 @@
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'National First Font', sans-serif;
+    font-family: 'Nunito', sans-serif;
       font-size: 2;                                              
     }
 
     h1{padding-top: 1.5rem;
         font-size: 4rem;
-        font-family: 'Comming', sans-serif;
+        font-family: 'Nunito', sans-serif;
     }
      
     img {
@@ -25,24 +25,25 @@
     h2{color: $mainColor;
         padding-top: 1.5rem;
         font-size: 5rem;
-        font-family: 'Comming', sans-serif;}
+        font-family: 'Nunito', sans-serif;
+    }
 
         button{color: white;
-            background-color: #68c4a1;
+            background-color: $linkHoverColor;
             padding: 0.5rem;
             border-radius: 5px;
 
             &:hover {
-                color: rgb(124, 174, 124);
+                color: $linkHoverColor;
                 transition: 0.5s;
                 background-color: brown;
             }}
 
             h5{
                 font-weight: 500;
-                color: #3759a7;
+                color: $menuColor;
             }
-            h3{
+            h3{padding: 0.5rem;
                 font-weight: 500;
-                color: #3759a7;
+                color: $menuColor;
             }

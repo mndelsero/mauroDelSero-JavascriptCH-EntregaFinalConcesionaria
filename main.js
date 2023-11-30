@@ -106,10 +106,10 @@ function agregarTarjetita() {
     tarjetaNueva.innerHTML = `
     <div class="card-body">
     <h4>${autoEncontrado.marca} ${autoEncontrado.modelo}</h4>
-    <p>Modelo de lujo <br>el precio por unidad es de : <span> ${autoEncontrado.precio} </span> USD</p>
-    <p>el precio con iva es de <span> ${autoEncontrado.precio * 1.21}</span> USD</p>
-    <p>compraste un total de <span>${autoEncontrado.cantidad}</span> autos de este modelo</p>
-    <p>el total a pagar por todos los autos de este modelo sera de <span> ${autoEncontrado.precio * 1.21 * autoEncontrado.cantidad}</span> USD</p>
+    <p>Modelo de lujo <br>el precio por unidad es de : <span> ${autoEncontrado.precio} </span> USD.</p>
+    <p>el precio con iva es de <span> ${autoEncontrado.precio * 1.21}</span> USD.</p>
+    <p>compraste un total de <span>${autoEncontrado.cantidad}</span> autos de este modelo.</p>
+    <p>el total a pagar por todos los autos de este modelo sera de <span> ${autoEncontrado.precio * 1.21 * autoEncontrado.cantidad}</span> USD.</p>
     <button class="btn-eliminar" id="tarjeta-${autoEncontrado.id}">Eliminar Compra</button>
     </div>
       `;

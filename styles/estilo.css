@@ -5,14 +5,14 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "National First Font", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 2;
 }
 
 h1 {
   padding-top: 1.5rem;
   font-size: 4rem;
-  font-family: "Comming", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 img {
@@ -26,15 +26,15 @@ a {
 }
 
 h2 {
-  color: rgb(199, 78, 78);
+  color: rgb(255, 137, 1);
   padding-top: 1.5rem;
   font-size: 5rem;
-  font-family: "Comming", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 button {
   color: white;
-  background-color: #68c4a1;
+  background-color: rgb(124, 174, 124);
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -46,12 +46,13 @@ button:hover {
 
 h5 {
   font-weight: 500;
-  color: #3759a7;
+  color: rgb(92, 18, 119);
 }
 
 h3 {
+  padding: 0.5rem;
   font-weight: 500;
-  color: #3759a7;
+  color: rgb(92, 18, 119);
 }
 
 #carrito {
@@ -67,8 +68,8 @@ h3 {
 #carrito p span {
   padding: 0.5rem;
   border-radius: 3px;
-  background-color: rgb(199, 78, 78);
-  color: rgb(158, 209, 203);
+  background-color: rgb(255, 137, 1);
+  color: rgb(92, 18, 119);
 }
 
 #modelo-comprado {
@@ -90,7 +91,7 @@ header .menu nav .navbar {
   justify-content: space-around;
 }
 header .menu nav .navbar li a {
-  color: rgb(199, 78, 78);
+  color: rgb(255, 137, 1);
   padding: 1rem;
   border-radius: 5px;
   border: solid red 4px;
@@ -101,27 +102,62 @@ header .menu nav .navbar li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+  background-color: rgb(0, 0, 0);
+}
+.main .intro-sctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  border-bottom: solid rgb(255, 137, 1) 1px;
+  padding-bottom: 1rem;
+}
+.main .intro-sctn .intro-img {
+  background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.main .intro-sctn .intro-img p {
+  font-size: 2.5rem;
+  padding: 1rem;
+  background-color: rgba(177, 29, 0, 0.205);
+  margin: 0;
+  color: rgb(232, 155, 246);
+  border-radius: 0rem 0rem 2rem 2rem;
 }
 .main #catalogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0rem;
 }
 .main #catalogo .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  border-bottom: solid rgb(255, 137, 1) 1px;
   padding: 3rem;
 }
 .main #catalogo .cards #tarjeta-auto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 1rem;
+  color: rgb(92, 18, 119);
+  background-color: rgb(232, 155, 246);
   width: 20rem;
-  border: solid rgb(158, 128, 152) 0.5px;
+  border: solid rgb(255, 137, 1) 0.5px;
+  border-radius: 0.5rem;
 }
 .main #catalogo .cards #tarjeta-auto:hover {
   transition: 0.5s;
@@ -136,12 +172,13 @@ header .menu nav .navbar li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 1rem;
   line-height: 1.5rem;
 }
 .main #catalogo .cards #tarjeta-auto .card-body .btn-comprar {
   color: white;
-  background-color: #68c4a1;
+  background-color: rgb(124, 174, 124);
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -177,7 +214,7 @@ header .menu nav .navbar li a {
 }
 .main #tarjeta-auto .card-body .btn-comprar {
   color: white;
-  background-color: #68c4a1;
+  background-color: rgb(124, 174, 124);
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -187,15 +224,42 @@ header .menu nav .navbar li a {
   background-color: brown;
 }
 
-#lista-carrito {
+#carrito {
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: solid rgb(255, 137, 1) 1px;
+  margin-top: 1rem;
+}
+#carrito #lista-carrito {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   justify-content: space-evenly;
   padding: 2rem;
 }
-
-.card:hover {
+#carrito #lista-carrito .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carrito #lista-carrito .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carrito #lista-carrito .card .card-body h4 {
+  font-size: 2rem;
+  color: rgb(92, 18, 119);
+}
+#carrito #lista-carrito .card .card-body p {
+  font-size: 1rem;
+}
+#carrito #lista-carrito .card .card-body p span {
+  font-size: 1rem;
+}
+#carrito #lista-carrito .card:hover {
   transition: 0.5s;
   transform: scale(1.02);
   transform: translateY(-5px);
@@ -205,13 +269,15 @@ header .menu nav .navbar li a {
 
 .ultimo-mensaje {
   font-weight: 500;
-  color: #3759a7;
+  color: rgb(92, 18, 119);
   font-size: 2rem;
 }
 
 .ultima-compra-section {
   display: flex;
   flex-direction: column;
+  border-bottom: solid rgb(255, 137, 1) 1px;
+  align-items: center;
 }
 .ultima-compra-section #ultima-compra-list {
   display: grid;
@@ -221,8 +287,13 @@ header .menu nav .navbar li a {
   padding: 2rem;
 }
 .ultima-compra-section #ultima-compra-list .ultima-compra-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
   border: solid rgb(197, 229, 137) 2px;
+  background-color: rgb(232, 155, 246);
+  color: rgb(92, 18, 119);
 }
 .ultima-compra-section #ultima-compra-list .ultima-compra-card img {
   border-radius: 5px;
@@ -230,6 +301,48 @@ header .menu nav .navbar li a {
 .ultima-compra-section #ultima-compra-list .ultima-compra-card span {
   padding-inline: 0.5rem;
   border-radius: 3px;
-  background-color: rgba(229, 113, 113, 0.658);
-  color: rgb(16, 16, 102);
+  background-color: rgb(255, 137, 1);
+  color: rgb(92, 18, 119);
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 137, 1);
+  background-color: rgb(92, 18, 119);
+  padding: 0rem;
+}
+.head h1 {
+  display: flex;
+}
+.head h1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head h1 span .logo-icon {
+  display: inline;
+  width: 4rem;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 137, 1);
+  background-color: rgb(92, 18, 119);
+  padding: 0rem;
+}
+.foot h1 {
+  display: flex;
+}
+.foot h1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot h1 span .logo-icon {
+  display: inline;
+  width: 4rem;
 }/*# sourceMappingURL=estilo.css.map */

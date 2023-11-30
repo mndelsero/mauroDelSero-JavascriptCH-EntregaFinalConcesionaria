@@ -1,0 +1,26 @@
+.head{display: flex;
+    flex-direction: row;
+    justify-content: center;
+color: rgb(255, 137, 1);
+    background-color: rgb(92, 18, 119);
+    padding: 0rem;
+
+h1{
+    display: flex;
+    
+
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .logo-icon{display: inline;
+            width: 4rem;
+           
+        }
+    }
+}
+
+    
+
+}
