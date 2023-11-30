@@ -294,6 +294,7 @@ header .menu nav .navbar li a {
   border: solid rgb(197, 229, 137) 2px;
   background-color: rgb(232, 155, 246);
   color: rgb(92, 18, 119);
+  border-radius: 1rem;
 }
 .ultima-compra-section #ultima-compra-list .ultima-compra-card img {
   border-radius: 5px;
