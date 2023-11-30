@@ -113,9 +113,9 @@ header .menu nav .navbar li a {
   min-height: min-content;
   border-bottom: solid rgb(255, 137, 1) 1px;
   padding-bottom: 1rem;
+  background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
 }
 .main .intro-sctn .intro-img {
-  background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 2rem;
