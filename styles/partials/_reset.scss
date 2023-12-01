@@ -11,6 +11,8 @@
     h1{padding-top: 1.5rem;
         font-size: 4rem;
         font-family: 'Nunito', sans-serif;
+
+       
     }
      
     img {
@@ -26,24 +28,65 @@
         padding-top: 1.5rem;
         font-size: 5rem;
         font-family: 'Nunito', sans-serif;
+
+        @include tablet {
+            font-size: 3rem;
+        }
+
+        @include mobile{
+            font-size: 2rem;
+        }
+        @include mini{
+            font-size: 1.5rem;
+        }
+        @include ant {
+            font-size: 1.2rem;
+            
+        }
     }
 
-        button{color: white;
-            background-color: $linkHoverColor;
-            padding: 0.5rem;
-            border-radius: 5px;
+       h4{
+      
 
-            &:hover {
-                color: $linkHoverColor;
-                transition: 0.5s;
-                background-color: brown;
-            }}
+        @include mobile{
+            font-size: 1.5rem;
+        }
+
+        @include mini{
+          
+                        font-size: 1rem;
+                       
+        }
+
+        @include ant {
+            font-size: 0.6rem;
+           
+        }
+       }
 
             h5{
                 font-weight: 500;
                 color: $menuColor;
+                @include mini{
+                    font-size: 1rem;
+                }
+                @include ant {
+                    font-size: 0.8rem;
+                    
+                }
             }
             h3{padding: 0.5rem;
                 font-weight: 500;
                 color: $menuColor;
+                @include tablet {
+                    font-size: 1.5rem;
+                }
+        
+                @include mini{
+                    font-size: 1rem;
+                }
+                @include ant {
+                    font-size: 0.8rem;
+                    
+                }
             }

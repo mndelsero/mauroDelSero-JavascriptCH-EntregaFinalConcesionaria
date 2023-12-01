@@ -31,22 +31,56 @@ h2 {
   font-size: 5rem;
   font-family: "Nunito", sans-serif;
 }
-
-button {
-  color: white;
-  background-color: rgb(124, 174, 124);
-  padding: 0.5rem;
-  border-radius: 5px;
+@media screen and (max-width: 995px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
-button:hover {
-  color: rgb(124, 174, 124);
-  transition: 0.5s;
-  background-color: brown;
+@media screen and (max-width: 720px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  h4 {
+    font-size: 0.6rem;
+  }
 }
 
 h5 {
   font-weight: 500;
   color: rgb(92, 18, 119);
+}
+@media screen and (max-width: 550px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  h5 {
+    font-size: 0.8rem;
+  }
 }
 
 h3 {
@@ -54,47 +88,20 @@ h3 {
   font-weight: 500;
   color: rgb(92, 18, 119);
 }
-
-#carrito {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (max-width: 995px) {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
-#carrito p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: rgb(109, 134, 210);
+@media screen and (max-width: 550px) {
+  h3 {
+    font-size: 1rem;
+  }
 }
-#carrito p span {
-  padding: 0.5rem;
-  border-radius: 3px;
-  background-color: rgb(255, 137, 1);
-  color: rgb(92, 18, 119);
-}
-
-#modelo-comprado {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-}
-header .menu {
-  width: 100%;
-}
-header .menu nav .navbar {
-  display: flex;
-  justify-content: space-around;
-}
-header .menu nav .navbar li a {
-  color: rgb(255, 137, 1);
-  padding: 1rem;
-  border-radius: 5px;
-  border: solid red 4px;
+@media screen and (max-width: 550px) {
+  h3 {
+    font-size: 0.8rem;
+  }
 }
 
 .main {
@@ -105,6 +112,11 @@ header .menu nav .navbar li a {
   padding: 2rem;
   background-color: rgb(0, 0, 0);
 }
+@media screen and (max-width: 995px) {
+  .main {
+    padding: 1rem;
+  }
+}
 .main .intro-sctn {
   display: flex;
   flex-direction: column;
@@ -113,24 +125,41 @@ header .menu nav .navbar li a {
   min-height: min-content;
   border-bottom: solid rgb(255, 137, 1) 1px;
   padding-bottom: 1rem;
-  background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
 }
 .main .intro-sctn .intro-img {
+  background-image: url("../../imgs/sports-classic-car-5k-yh.jpg");
   background-size: cover;
   background-position: center center;
   border-radius: 2rem;
-  min-height: 90vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .main .intro-sctn .intro-img p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 1rem;
   background-color: rgba(177, 29, 0, 0.205);
   margin: 0;
   color: rgb(232, 155, 246);
   border-radius: 0rem 0rem 2rem 2rem;
+}
+@media screen and (max-width: 995px) {
+  .main .intro-sctn .intro-img p {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main .intro-sctn .intro-img p {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main .intro-sctn .intro-img p {
+    font-size: 0.8rem;
+  }
 }
 .main #catalogo {
   display: flex;
@@ -147,6 +176,25 @@ header .menu nav .navbar li a {
   border-bottom: solid rgb(255, 137, 1) 1px;
   padding: 3rem;
 }
+@media screen and (max-width: 1440px) {
+  .main #catalogo .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 995px) {
+  .main #catalogo .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main #catalogo .cards {
+    grid-template-columns: 1fr;
+  }
+}
 .main #catalogo .cards #tarjeta-auto {
   display: flex;
   flex-direction: column;
@@ -159,6 +207,18 @@ header .menu nav .navbar li a {
   border: solid rgb(255, 137, 1) 0.5px;
   border-radius: 0.5rem;
 }
+@media screen and (max-width: 720px) {
+  .main #catalogo .cards #tarjeta-auto {
+    padding: 0.5rem;
+    width: 16rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main #catalogo .cards #tarjeta-auto {
+    padding: 0.2rem;
+    width: 12rem;
+  }
+}
 .main #catalogo .cards #tarjeta-auto:hover {
   transition: 0.5s;
   transform: scale(1.02);
@@ -167,6 +227,17 @@ header .menu nav .navbar li a {
 }
 .main #catalogo .cards #tarjeta-auto img {
   width: 18rem;
+  border-radius: 5px;
+}
+@media screen and (max-width: 720px) {
+  .main #catalogo .cards #tarjeta-auto img {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main #catalogo .cards #tarjeta-auto img {
+    width: 10rem;
+  }
 }
 .main #catalogo .cards #tarjeta-auto .card-body {
   display: flex;
@@ -176,61 +247,78 @@ header .menu nav .navbar li a {
   padding: 1rem;
   line-height: 1.5rem;
 }
+@media screen and (max-width: 720px) {
+  .main #catalogo .cards #tarjeta-auto .card-body {
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main #catalogo .cards #tarjeta-auto .card-body {
+    line-height: 0.8rem;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+  }
+}
 .main #catalogo .cards #tarjeta-auto .card-body .btn-comprar {
   color: white;
   background-color: rgb(124, 174, 124);
   padding: 0.5rem;
   border-radius: 5px;
 }
+@media screen and (max-width: 720px) {
+  .main #catalogo .cards #tarjeta-auto .card-body .btn-comprar {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main #catalogo .cards #tarjeta-auto .card-body .btn-comprar {
+    font-size: 0.5rem;
+  }
+}
 .main #catalogo .cards #tarjeta-auto .card-body .btn-comprar:hover {
-  color: rgb(124, 174, 124);
+  font-weight: bold;
+  color: rgb(232, 155, 246);
   transition: 0.5s;
-  background-color: brown;
-}
-.main #tarjeta-auto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  width: 20rem;
-  border: solid rgb(158, 128, 152) 0.5px;
-}
-.main #tarjeta-auto:hover {
-  transition: 0.5s;
-  transform: scale(1.02);
-  transform: translateY(-5px);
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
-}
-.main #tarjeta-auto img {
-  border-radius: 3px;
-  width: 18rem;
-}
-.main #tarjeta-auto .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  line-height: 1.5rem;
-}
-.main #tarjeta-auto .card-body .btn-comprar {
-  color: white;
-  background-color: rgb(124, 174, 124);
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-.main #tarjeta-auto .card-body .btn-comprar:hover {
-  color: rgb(124, 174, 124);
-  transition: 0.5s;
-  background-color: brown;
 }
 
 #carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: white;
   border-radius: 1rem;
   padding: 1rem;
   border: solid rgb(255, 137, 1) 1px;
   margin-top: 1rem;
+}
+#carrito p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(109, 134, 210);
+}
+@media screen and (max-width: 720px) {
+  #carrito p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito p {
+    font-size: 0.7rem;
+  }
+}
+#carrito p span {
+  padding: 0.5rem;
+  border-radius: 3px;
+  background-color: rgb(255, 137, 1);
+  color: rgb(92, 18, 119);
+}
+@media screen and (max-width: 720px) {
+  #carrito p span {
+    padding: 0.2rem;
+  }
 }
 #carrito #lista-carrito {
   display: grid;
@@ -239,32 +327,139 @@ header .menu nav .navbar li a {
   justify-content: space-evenly;
   padding: 2rem;
 }
+@media screen and (max-width: 995px) {
+  #carrito #lista-carrito {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 720px) {
+  #carrito #lista-carrito {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito {
+    grid-template-columns: 1fr;
+  }
+}
 #carrito #lista-carrito .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 #carrito #lista-carrito .card .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 720px) {
+  #carrito #lista-carrito .card .card-body {
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito .card .card-body {
+    line-height: 0.7rem;
+  }
 }
 #carrito #lista-carrito .card .card-body h4 {
   font-size: 2rem;
   color: rgb(92, 18, 119);
 }
+@media screen and (max-width: 1440px) {
+  #carrito #lista-carrito .card .card-body h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito .card .card-body h4 {
+    font-size: 1rem;
+  }
+}
 #carrito #lista-carrito .card .card-body p {
   font-size: 1rem;
 }
+@media screen and (max-width: 1440px) {
+  #carrito #lista-carrito .card .card-body p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito .card .card-body p {
+    font-size: 0.6rem;
+    padding: 0.1rem;
+  }
+}
 #carrito #lista-carrito .card .card-body p span {
+  padding: 0.1rem;
   font-size: 1rem;
+}
+@media screen and (max-width: 1440px) {
+  #carrito #lista-carrito .card .card-body p span {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito .card .card-body p span {
+    font-size: 0.5rem;
+    padding: 0.1rem;
+  }
+}
+#carrito #lista-carrito .card .card-body button {
+  color: white;
+  background-color: rgb(124, 174, 124);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1440px) {
+  #carrito #lista-carrito .card .card-body button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #lista-carrito .card .card-body button {
+    font-size: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+}
+#carrito #lista-carrito .card .card-body button:hover {
+  font-weight: bold;
+  color: rgb(232, 155, 246);
+  transition: 0.5s;
 }
 #carrito #lista-carrito .card:hover {
   transition: 0.5s;
   transform: scale(1.02);
   transform: translateY(-5px);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
-  background-color: rgba(228, 235, 100, 0.775);
+  background-color: rgb(232, 155, 246);
+}
+#carrito #confirmo-compra {
+  color: white;
+  background-color: rgb(124, 174, 124);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+@media screen and (max-width: 720px) {
+  #carrito #confirmo-compra {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #carrito #confirmo-compra {
+    padding: 0.3rem;
+    font-size: 0.5;
+  }
+}
+#carrito #confirmo-compra:hover {
+  font-weight: bold;
+  color: rgb(232, 155, 246);
+  transition: 0.5s;
 }
 
 .ultimo-mensaje {
@@ -286,6 +481,25 @@ header .menu nav .navbar li a {
   justify-content: space-evenly;
   padding: 2rem;
 }
+@media screen and (max-width: 1440px) {
+  .ultima-compra-section #ultima-compra-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 995px) {
+  .ultima-compra-section #ultima-compra-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ultima-compra-section #ultima-compra-list {
+    grid-template-columns: 1fr;
+  }
+}
 .ultima-compra-section #ultima-compra-list .ultima-compra-card {
   display: flex;
   flex-direction: column;
@@ -296,8 +510,24 @@ header .menu nav .navbar li a {
   color: rgb(92, 18, 119);
   border-radius: 1rem;
 }
+@media screen and (max-width: 720px) {
+  .ultima-compra-section #ultima-compra-list .ultima-compra-card {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ultima-compra-section #ultima-compra-list .ultima-compra-card {
+    font-size: 0.5rem;
+  }
+}
 .ultima-compra-section #ultima-compra-list .ultima-compra-card img {
   border-radius: 5px;
+}
+@media screen and (max-width: 550px) {
+  .ultima-compra-section #ultima-compra-list .ultima-compra-card img {
+    width: 10rem;
+  }
 }
 .ultima-compra-section #ultima-compra-list .ultima-compra-card span {
   padding-inline: 0.5rem;
@@ -317,6 +547,11 @@ header .menu nav .navbar li a {
 .head h1 {
   display: flex;
 }
+@media screen and (max-width: 550px) {
+  .head h1 {
+    font-size: 2rem;
+  }
+}
 .head h1 span {
   display: flex;
   justify-content: center;
@@ -325,6 +560,11 @@ header .menu nav .navbar li a {
 .head h1 span .logo-icon {
   display: inline;
   width: 4rem;
+}
+@media screen and (max-width: 550px) {
+  .head h1 span .logo-icon {
+    width: 2rem;
+  }
 }
 
 .foot {
@@ -338,6 +578,11 @@ header .menu nav .navbar li a {
 .foot h1 {
   display: flex;
 }
+@media screen and (max-width: 550px) {
+  .foot h1 {
+    font-size: 2rem;
+  }
+}
 .foot h1 span {
   display: flex;
   justify-content: center;
@@ -346,4 +591,9 @@ header .menu nav .navbar li a {
 .foot h1 span .logo-icon {
   display: inline;
   width: 4rem;
+}
+@media screen and (max-width: 550px) {
+  .foot h1 span .logo-icon {
+    width: 2rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

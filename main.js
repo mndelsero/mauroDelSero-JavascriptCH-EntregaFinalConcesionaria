@@ -57,8 +57,8 @@ fetch('./proddata.json')
         alt="">
     <div class="card-body">
         <h4>${auto.marca} ${auto.modelo}</h4>
-        <p>Modelo de trasmision ${auto.trasmision} <br>el precio por unidad es de : <span> ${auto.precio} </span> USD</p>
-        <p>STOCK: ${auto.stock} </p>
+        <p>Modelo de trasmision ${auto.trasmision}. <br>El precio por unidad es de : <span> ${auto.precio} </span> USD.</p>
+        <p>STOCK: ${auto.stock} .</p>
         <button class="btn-comprar" id="${auto.id}">COMPRAR</button>
     </div>`;
             seccionProductos.appendChild(cardAuto);
